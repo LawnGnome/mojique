@@ -3,6 +3,7 @@ name = "mojique"
 version = "0.1.0"
 description = "A safe Rust wrapper and pool implementation around libmagic"
 license = "MIT"
+repository = "https://github.com/LawnGnome/mojique"
 edition = "2024"
 rust-version = "1.88"
 

@@ -83,6 +83,7 @@ definitely understand the impulse.
 For now, I don't really have the time to implement this. But never say never.
 (And if someone out there does do so, please let me know! I'd love to use it.)
 
+[docs]: https://docs.rs/mojique
 [libmagic]: https://www.darwinsys.com/file/
 [magic]: https://crates.io/crates/magic
 [magic-sys]: https://crates.io/crates/magic-sys

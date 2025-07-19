@@ -35,7 +35,7 @@ fn main() -> anyhow::Result<()> {
 (Nobody's actually asked any questions yet, but here are the questions I expect
 to be asked eventually if this sees any real use.)
 
-### Why not [`magic`]?
+### Why not `magic`?
 
 The venerable [`magic` crate][magic] has existed for over a decade, and also
 provides a safe wrapper around libmagic. I elected to write my own take on this

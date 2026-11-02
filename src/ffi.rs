@@ -102,4 +102,12 @@ pub enum Flag {
 
     /// Don't examine CSV files.
     NoCheckCSV = MAGIC_NO_CHECK_CSV,
+
+    /// Don't allow decompressors that use fork.
+    #[cfg(feature = "v5-44")]
+    NoCompressFork = MAGIC_NO_COMPRESS_FORK,
+
+    /// Don't examine SIMH tape files.
+    #[cfg(feature = "v5-45")]
+    NoCheckSIMH = MAGIC_NO_CHECK_SIMH,
 }

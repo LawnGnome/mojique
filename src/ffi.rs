@@ -65,11 +65,9 @@ pub enum Flag {
     Apple = MAGIC_APPLE,
 
     /// Return a slash-separated list of extensions for this file type.
-    #[cfg(feature = "v5-23")]
     Extension = MAGIC_EXTENSION,
 
     /// Don't report on compression, only report about the uncompressed data.
-    #[cfg(feature = "v5-23")]
     CompressTransparent = MAGIC_COMPRESS_TRANSP,
 
     /// Don't check for `EMX` application type (only on EMX).
@@ -100,10 +98,8 @@ pub enum Flag {
     NoCheckTokens = MAGIC_NO_CHECK_TOKENS,
 
     /// Don't examine JSON files.
-    #[cfg(feature = "v5-35")]
     NoCheckJSON = MAGIC_NO_CHECK_JSON,
 
     /// Don't examine CSV files.
-    #[cfg(feature = "v5-38")]
     NoCheckCSV = MAGIC_NO_CHECK_CSV,
 }

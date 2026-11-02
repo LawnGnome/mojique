@@ -1,5 +1,5 @@
 use std::{
-    ffi::{CStr, CString, c_char, c_int},
+    ffi::{CStr, CString, c_char, c_int, c_void},
     fmt::Debug,
     io::{BufReader, ErrorKind, Read, Write},
     os::{fd::AsRawFd, unix::ffi::OsStrExt},
@@ -37,9 +37,9 @@ impl Handle {
 
     /// Returns a textual description of the given buffer.
     pub fn buffer(&mut self, buf: &[u8]) -> Result<String, Error> {
-        description_to_str(
-            self.raw(|cookie| unsafe { magic_buffer(cookie, buf.as_ptr(), buf.len()) })?,
-        )
+        description_to_str(self.raw(|cookie| unsafe {
+            magic_buffer(cookie, buf.as_ptr() as *const c_void, buf.len())
+        })?)
     }
 
     /// Returns a textual description of the given file.

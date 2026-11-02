@@ -48,6 +48,8 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.RELEASE_PLZ_TOKEN }}
+      - name: Install libmagic
+        run: sudo apt-get update && sudo apt-get -y install libmagic-dev
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
       - name: Run release-plz

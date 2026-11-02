@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0](https://github.com/LawnGnome/mojique/compare/v0.1.1...v0.2.0) - 2026-11-02
+
+### Added
+
+- add new magic-sys flags
+- [**breaking**] upgrade to magic-sys 0.43
+
+### Fixed
+
+- make `Flag` non-exhaustive
+
+### Other
+
+- add libmagic-dev to release-plz workflow
+
 ## [0.1.1](https://github.com/LawnGnome/mojique/compare/v0.1.0...v0.1.1) - 2025-07-19
 
 ### Fixed

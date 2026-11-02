@@ -20,6 +20,7 @@ assert_eq_size!(c_int, i32);
 /// The flag descriptions below are reproduced directly from the `libmagic(3)` man page, which is
 /// the authoritative source of any behavioural information.
 #[derive(Debug, Copy, Clone)]
+#[non_exhaustive]
 #[repr(i32)]
 pub enum Flag {
     /// Print debugging messages to stderr.
